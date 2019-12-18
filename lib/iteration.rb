@@ -9,7 +9,7 @@ while row_index < src.count do
   end
   row_index += 1
 end
-return pizza_arrary
+return pizza_array
 
 end
 
