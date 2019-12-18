@@ -10,7 +10,6 @@ while row_index < src.count do
   row_index += 1
 end
 return pizza_array
-
 end
 
 def find_greater_pair(src)
