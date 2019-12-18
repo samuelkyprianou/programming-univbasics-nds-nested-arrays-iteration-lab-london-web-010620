@@ -13,7 +13,21 @@ return pizza_array
 end
 
 def find_greater_pair(src)
-
+larger_number = []
+row_index = 0
+while row_index < src.count do
+  element_index = 0
+  while element_index < src[row_index].count do
+    if src[row_index][element_index] >= src[row_index][element_index+1]
+      larger_number << src[row_index][element_index]
+    else
+      larger_number << src[row_index][element_index+1]
+    end
+    element_index += 2
+  end
+  row_index += 1
+end
+return larger_number
 end
 
 def total_even_pairs(src)
