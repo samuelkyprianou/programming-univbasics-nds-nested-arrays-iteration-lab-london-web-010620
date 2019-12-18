@@ -36,9 +36,11 @@ row_index = 0
 while row_index < src.count do
   element_index = 0
   while element_index < src[row_index].count do
-    if src[row_index][element_index]  && src[row_index]
-    element_index += 1
+    if src[row_index][element_index] % 2 == 0 && src[row_index][element_index+1] % 2 == 0
+      total += (src[row_index][element_index] + src[row_index][element_index+1])
+    element_index += 2
   end
   row_index += 1
 end
+return total
 end
