@@ -1,4 +1,4 @@
-
+require 'pry'
 
 def join_ingredients(src)
 pizza_array = []
